@@ -52,3 +52,9 @@ Route::get('larahero/hero1', [HeroController::class, 'hero1Appear']);
 // 武器あり勇者2の登録
 // ここでいう武器とはviewファイルを意味する
 Route::get('larahero/hero2', [HeroController::class, 'hero2Appear']);
+
+// 武器防具あり勇者3の登録
+// ここでいう防具というのはviewファイルに渡すデータのこと
+// HeroController::class名の上にマウスポインタ、もしくはカーソルを持っていってaltクリック、もしくはF12キー
+// を押すと該当のクラスにジャンプできて便利です
+Route::get('larahero/hero3', [HeroController::class, 'hero3Appear']);

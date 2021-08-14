@@ -24,4 +24,9 @@ class HeroController extends Controller
 
         return view('hero2');
     }
+
+    public function hero3Appear()
+    {
+        return 'hero3';
+    }
 }

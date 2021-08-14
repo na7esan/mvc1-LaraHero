@@ -15,7 +15,6 @@ class CreateArmorsTable extends Migration
     {
         Schema::create('armors', function (Blueprint $table) {
             $table->id();
-            // 0868aaa61d26a1104091ac8e6a16fd44ee842c88の後にマイグレを実行
             $table->string('name');
             $table->timestamps();
         });

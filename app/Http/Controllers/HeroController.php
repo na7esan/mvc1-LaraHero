@@ -9,7 +9,7 @@ class HeroController extends Controller
 {
     public function hero1Appear()
     {
-        return 'hero1';
+        return 'hero1の物語';
     }
 
     public function hero2Appear()

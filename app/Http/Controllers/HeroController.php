@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Armor;
 use Illuminate\Http\Request;
 
 class HeroController extends Controller
@@ -37,6 +38,10 @@ class HeroController extends Controller
         // この段階でphpMyAdminなどのツールで実際にデータを登録して、防具を実体化させる
         // モデルファイルとマイグレーションファイルはArtisanコマンドで同時に作成できる
         // この時モデル名の先頭は大文字で今回は防具なのでArmorモデルを作成する
-        return 'hero3';
+
+        // id1のArmorレコードの取得
+        $armor=Armor::find(1);
+        // viewヘルパ関数を第2引数でビューに渡したいデータを連想配列で設定
+        return view('hero3',['armor'=>$armor]);
     }
 }

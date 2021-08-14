@@ -48,3 +48,7 @@ use Illuminate\Support\Facades\Route;
 // 下記の例ではgetでlarahero/hero1にアクセスされたらhero1Appearはアクションを呼び出す
 // アクションの中身はコントローラファイルに記載する必要あり
 Route::get('larahero/hero1', [HeroController::class, 'hero1Appear']);
+
+// 武器あり勇者2の登録
+// ここでいう武器とはviewファイルを意味する
+Route::get('larahero/hero2', [HeroController::class, 'hero2Appear']);

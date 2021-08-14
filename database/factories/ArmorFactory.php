@@ -22,7 +22,9 @@ class ArmorFactory extends Factory
     public function definition()
     {
         return [
-            //
+            'name' => $this->faker->firstName() . 'の鎧',
+            'created_at' => now(),
+            'updated_at' => $this->faker->dateTimeBetween('0days', '10days'),
         ];
     }
 }

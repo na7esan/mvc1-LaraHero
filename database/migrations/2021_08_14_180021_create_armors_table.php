@@ -15,6 +15,7 @@ class CreateArmorsTable extends Migration
     {
         Schema::create('armors', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
             $table->timestamps();
         });
     }
